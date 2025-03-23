@@ -57,3 +57,5 @@
 13389	19085	1742738415092640544	rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/Users/test/Desktop/Assignment/Tasty-Hub-React-Native-Ts/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/ComponentDescriptors.cpp.o	216be2028da3dd30
 19085	19156	1742738415177720483	/Users/test/Desktop/Assignment/Tasty-Hub-React-Native-Ts/android/app/build/intermediates/cxx/Debug/02x61e2j/obj/x86/libreact_codegen_rnscreens.so	130feacd96bb864d
 19156	19263	1742738415279393248	/Users/test/Desktop/Assignment/Tasty-Hub-React-Native-Ts/android/app/build/intermediates/cxx/Debug/02x61e2j/obj/x86/libappmodules.so	eec23c96e9d149ca
+1	17	0	/Users/test/Desktop/Assignment/Tasty-Hub-React-Native-Ts/android/app/.cxx/Debug/02x61e2j/x86/CMakeFiles/cmake.verify_globs	f3136577348f658b
+0	17	0	clean	4c4332b56b7f038f

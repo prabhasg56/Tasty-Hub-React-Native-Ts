@@ -8,6 +8,8 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import { HitListStack, ListStack, MapStack, PeopleStack, ProfileStack } from './StackRoutes';
 import { lightColor, primaryColor } from '../styles/theme';
 import { BottomTabParamList } from './types';
+import { Image } from 'react-native';
+import { ProfileImage } from '../assets/images';
 
 const Tab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -34,8 +36,14 @@ const BottomTabRoutes: React.FC = () => (
                         iconName =  focused ? 'bookmark' : 'bookmark-outline';
                         return <Ionicons name={iconName} size={size} color={color} />;
                     case "Profile":
-                        iconName = focused ? 'person-circle' : 'person-circle-outline';
-                        return <Ionicons name={iconName} size={size} color={color} />;
+                        return (
+                            <Image
+                                source={ProfileImage} 
+                                style={{ width: size, height: size, borderRadius: size / 2 }} 
+                            />
+                        );
+                        // iconName = focused ? 'person-circle' : 'person-circle-outline';
+                        // return <Ionicons name={iconName} size={size} color={color} />;
                 }
             },
             tabBarActiveTintColor: '#FF9D9D',
