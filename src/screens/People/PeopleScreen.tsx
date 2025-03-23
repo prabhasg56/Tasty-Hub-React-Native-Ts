@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 import { ProfileScreenNavigationProp } from '../../navigation/types';
 import CustomText from '../../components/Common/CustomText';
 import SearchBar from '../../components/SearchBar';
-import PeopleCard from '../../components/Casrds/PeopleCard';
+import PeopleCard from '../../components/Cards/PeopleCard';
 
 import { User1, User2, User3, User4 } from '../../assets/images';
 

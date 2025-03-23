@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, Image, StyleSheet, TouchableOpacity, ImageSourcePropType } from "react-native";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import { Heart, Spoon, Star } from "../../assets/icons";
+import SpoonBadge from "../Badges/SpoonBadge";
 
 // Define Type for Props
 interface Person {
@@ -32,10 +33,8 @@ const PeopleCard: React.FC<PeopleCardProps> = ({ person }) => {
                         <Text style={styles.name}>
                             {person.name}
                         </Text>
-                        <View style={styles.starCon}>
-                            <Image source={Spoon} style={styles.spoon} />
-                            <Image source={Star} style={styles.star} />
-                        </View>
+                       
+                        <SpoonBadge/>
                     </View>
                     <Text style={styles.location}>{person.location}</Text>
                 </View>
@@ -76,10 +75,6 @@ const styles = StyleSheet.create({
         color: "#A9A9A9",
         fontSize: 14,
     },
-    star: {
-        width: 20,
-        height: 20,
-    },
     heartCon: {
         position: "absolute",
         right: 10,
@@ -91,18 +86,6 @@ const styles = StyleSheet.create({
         alignItems: "center",
         gap: 4
     },
-
-    starCon: {
-        justifyContent: "center",
-        alignItems: "center"
-    },
-    spoon: {
-        position: "absolute",
-        zIndex: 100,
-        top: 4,
-        bottom: 2,
-        right: 4,
-    }
 });
 
 export default PeopleCard;

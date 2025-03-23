@@ -44,9 +44,19 @@ export default CustomButton;
 const styles = StyleSheet.create({
     buttonContainer: {
         paddingVertical: 10,
-        marginHorizontal: 10,
         marginTop: 18,
-        borderRadius: 6,
+        borderRadius: 24,
+        borderWidth: 2,
+        borderColor: 'black',
+
+        // Black Shadow for iOS
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 6,
+
+        // Black Shadow for Android
+        elevation: 6,
     },
     btnText: {
         textAlign: 'center',
