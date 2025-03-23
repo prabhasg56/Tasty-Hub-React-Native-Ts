@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "safeareacontext_autolinked_build",
+		"source" : "/Users/test/Desktop/Assignment/Tasty_ Hub_React_Native_Ts/node_modules/react-native-safe-area-context/android/src/main/jni"
+	}
+}

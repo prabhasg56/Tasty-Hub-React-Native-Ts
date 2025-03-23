@@ -1,0 +1,17 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "jsx": "react-native",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*", "index.tsx"],
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js"]
+}
