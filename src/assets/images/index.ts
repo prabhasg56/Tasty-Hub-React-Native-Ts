@@ -19,6 +19,8 @@ import Tendie from "./Tendie.png";
 import BestThai from "./BestThai.png";
 import DateSpot from "./DateSpot.png";
 
+import Graph from "./Graph.png";
+
 export {
     User1,
     User2,
@@ -40,4 +42,5 @@ export {
     Tendie,
     BestThai,
     DateSpot,
+    Graph
 }

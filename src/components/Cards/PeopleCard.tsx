@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Image, StyleSheet, TouchableOpacity, ImageSourcePropType } from "react-native";
 import AntDesign from "react-native-vector-icons/AntDesign";
-import { Heart, Spoon, Star } from "../../assets/icons";
+import { Heart } from "../../assets/icons";
 import SpoonBadge from "../Badges/SpoonBadge";
 
 // Define Type for Props
@@ -85,6 +85,10 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         gap: 4
+    },
+    star: {
+        width: 20,
+        height: 20,
     },
 });
 

@@ -42,7 +42,7 @@ const ProfileScreen: React.FC = () => {
 
             <ListSection />
 
-            {/* <StaticChart/> */}
+            <StaticChart/>
 
             <MenuList />
 

@@ -1,30 +1,48 @@
 import React from 'react';
-import { View } from 'react-native';
-import { LineChart } from 'react-native-chart-kit';
+import { Image, StyleSheet, View, Dimensions } from 'react-native';
+import { Graph } from '../assets/images';
+import CustomText from './Common/CustomText';
+
+const { width } = Dimensions.get("window"); // Get screen width dynamically
 
 const StaticChart = () => {
     return (
-        <View>
-            <LineChart
-                data={{
-                    labels: ['5.3', '6', '7', '8', '9.6'],
-                    datasets: [{ data: [500, 1200, 2000, 2300, 1800] }],
-                }}
-                width={350}
-                height={220}
-                yAxisLabel=""
-                chartConfig={{
-                    backgroundColor: '#121212',
-                    backgroundGradientFrom: '#121212',
-                    backgroundGradientTo: '#121212',
-                    decimalPlaces: 0,
-                    color: (opacity = 1) => `rgba(255, 0, 0, ${opacity})`,
-                    labelColor: () => 'white',
-                }}
-                style={{ borderRadius: 16 }}
-            />
+        <View style={styles.container}>
+            <Image source={Graph} style={styles.graph} resizeMode="contain" />
+            <View style={styles.labelContainer}>
+                <CustomText style={styles.value}>5.3</CustomText>
+                <CustomText style={styles.value}>9.8</CustomText>
+            </View>
         </View>
     );
 };
 
 export default StaticChart;
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        marginTop: 20,
+        alignItems: "center",
+        borderBottomColor:"#2A2A2A",
+        borderBottomWidth:2,
+        paddingBottom: 24,
+    },
+    graph: {
+        width: width*0.96, 
+        // height: 200,
+    },
+    labelContainer: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        width: width*0.95,
+        paddingHorizontal:5
+    },
+    value: {
+        fontSize: 14,
+        fontWeight: "bold",
+        marginBottom: 5,
+        color:"white"
+    }
+
+});
